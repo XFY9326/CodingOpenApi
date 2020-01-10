@@ -27,26 +27,22 @@
 
 1. 获取OpenApi实例 
 
-
-    OpenApi.getInstance()
+        OpenApi.getInstance()
 
 2. 从services.api包下的类中选取需要请求的方法  
 
-
-    // 示例为获取项目信息
-    Projects.getProjectInfo()  
+        // 示例为获取项目信息
+        Projects.getProjectInfo()  
 
 3. 填写参数，构建Api对象，进行请求  
 
-
-    ... .request(Projects.getProjectInfo(..., ..., ...)
+        ... .request(Projects.getProjectInfo(..., ..., ...)
 
 4. 通过接口返回请求结果  
 
-
-    // ProjectInfo为返回的json的JavaBean对象
-    // 支持使用List，String等
-    new ApiResponseListener<ProjectInfo>() { ... }
+        //ProjectInfo为返回的json的JavaBean对象
+        //支持使用List，String等
+        new ApiResponseListener<ProjectInfo>() { ... }
 
 ----  
 
